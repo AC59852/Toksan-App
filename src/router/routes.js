@@ -9,6 +9,7 @@ const routes = [
       { path: '/manga', component: () => import('pages/Manga.vue') },
       { path: '/search', component: () => import('pages/Search.vue') },
       { path: '/anime/:name', component: () => import('pages/Anime-Specific.vue') },
+      { path: '/:name/characters', component: () => import('pages/Anime-Characters.vue') },
     ]
   },
 
