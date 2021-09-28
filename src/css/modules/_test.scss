@@ -1,0 +1,19 @@
+.swiper {
+    display: flex;
+    flex-direction: column;
+
+    .swiper-pagination {
+        position: relative;
+        order: 1;
+        bottom: 0;
+    }
+
+    .swiper-slide {
+        width: 300px;
+        .card {
+            background: red;
+            height: 250px;
+            margin: 0 auto;
+        }
+    }
+}
