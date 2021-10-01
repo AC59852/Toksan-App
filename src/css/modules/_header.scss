@@ -1,34 +1,75 @@
 header {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 0;
     left: 0;
     z-index: 99999;
     width: 100%;
-    background: #181818;
-    .bottomNav {
+    background: transparent;
+
+    .headerCon {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
         height: 60px;
+        width: 100%;
+        // padding: 0 20px;
+
+        h1 {
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header_imgCon {
+            width: 20px;
+            margin: 0 20px;
+            &:nth-child(1) {
+                width: 11px;
+            }
+
+            img { width: 100%; }
+        }
+    }
+
+    .nav {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 9999;
+        background: #111111;
+        .close {
+            color: white;
+            position: absolute;
+            right: 23px;
+            top: 13px;
+            font-size: 18px;
+        }
+
         .navList {
             display: flex;
-            justify-content: space-evenly;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
             height: 100%;
+
             .navItem {
-                width: 24px;
-                height: 24px;
                 list-style-type: none;
+                margin: 25px 0;
                 a {
                     text-decoration: none;
-                    i { 
-                        width: 100%;
-                        color: rgb(114, 114, 114);
-                        font-size: 24px;
-                        text-decoration: none;
-                        transition: color 0.3s ease-in-out;
-                    }
+                    color: rgb(114, 114, 114);
+                    font-size: 24px;
+                    text-decoration: none;
+                    transition: color 0.3s ease-in-out;
+
                     &.router-link-exact-active {
-                        i {
-                            color: white;
-                        }
+                        color: white;
                     }
                 }
             }
