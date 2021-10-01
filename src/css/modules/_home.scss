@@ -1,3 +1,47 @@
 #home {
     color: white;
+
+    .logoCon {
+        width: 80%;
+        margin: 10% auto 5%;
+
+        .logo { width: 100%; }
+    }
+
+    .explore {
+
+        &_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_itemWrapper {
+            width: 38%;
+            margin: 8px;
+            position: relative;
+        }
+
+        &_item { text-decoration: none; }
+
+        &_img { 
+            width: 100%;
+            filter: brightness(0.6);
+            border-radius: $standard-br; 
+        }
+
+        &_title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: $header-font;
+            font-weight: bold;
+            font-size: 36px;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+    }
 }
