@@ -4,12 +4,12 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '/', component: () => import('pages/Index.vue') },
-      { path: '/anime', component: () => import('pages/Anime.vue') },
-      { path: '/manga', component: () => import('pages/Manga.vue') },
-      { path: '/search', component: () => import('pages/Search.vue') },
-      { path: '/anime/:name', component: () => import('pages/Anime-Specific.vue') },
-      { path: '/:name/characters', component: () => import('pages/Anime-Characters.vue') },
+      { path: '/', component: () => import('pages/Index.vue'), name: "Home" },
+      { path: '/anime', component: () => import('pages/Anime.vue'), name: "Anime" },
+      { path: '/search', component: () => import('pages/Search.vue'), name: "Search" },
+      { path: '/anime/:name', component: () => import('pages/Anime-Specific.vue'), name: "" },
+      { path: '/:name/characters', component: () => import('pages/Anime-Characters.vue'), name: "Characters" },
+      { path: '/:name/characters/:character', component: () => import('pages/Character-Specific.vue'), name: "" },
     ]
   },
 

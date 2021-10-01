@@ -1,18 +1,27 @@
 <template>
   <header id="header">
-    <nav class="bottomNav">
+    <div class="headerCon">
+      <div @click="goBack()" class="header_imgCon">
+        <img src="~assets/icons/back_btn.svg" alt="Back to Previous Page">
+      </div>
+      <h1 v-if="this.$route.name !== ''">{{ this.$route.name }}</h1>
+      <h1 v-if="this.$route.name == '' && this.$route.params.character == null">{{ this.$route.params.name }}</h1>
+      <h1 v-if="this.$route.params.character !== '' || null || undefined">{{ this.$route.params.character }}</h1>
+      <div @click="showNav()" class="header_imgCon">
+        <img src="~assets/icons/nav_icon.svg" alt="Navigation Menu Icon">
+      </div>
+    </div>
+    <nav class="nav">
+      <span @click="hideNav()" class="close">X</span>
       <ul class="navList">
         <li class="navItem">
-          <router-link to="/"><q-icon name="fas fa-home" alt="Link to Home Page"/></router-link>
+          <router-link @click="hideNav()" to="/">Home</router-link>
         </li>
         <li class="navItem">
-          <router-link to="/anime"><q-icon name="fas fa-desktop" alt="Link to Anime Page"/></router-link>
+          <router-link @click="hideNav()" to="/anime">Anime</router-link>
         </li>
         <li class="navItem">
-          <router-link to="/manga"><q-icon name="fas fa-book" alt="Link to Manga Page"/></router-link>
-        </li>
-        <li class="navItem">
-          <router-link to="/search"><q-icon name="fas fa-search" alt="Link to Search Page"/></router-link>
+          <router-link @click="hideNav()" to="/search">Search</router-link>
         </li>
       </ul>
     </nav>
@@ -24,5 +33,19 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Header',
+
+  methods: {
+    showNav() {
+      document.querySelector(".nav").classList.add("show")
+    },
+
+    hideNav() {
+      document.querySelector(".nav").classList.remove("show")
+    },
+
+    goBack() {
+      return this.$router.go(-1)
+    }
+  }
 })
 </script>

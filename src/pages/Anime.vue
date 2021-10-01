@@ -1,70 +1,39 @@
 <template>
   <section>
-    <h4>This is the Anime Page</h4>
-    <swiper
-    :slides-per-view="'auto'"
-    :space-between="20"
-    :centeredSlides="true"
-    :loop="true"
-    :pagination="true"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
-  >
-    <swiper-slide class="slide">
-      <div class="card">
-        <h1>Character Name</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis facere asperiores ea quod voluptatum repudiandae facilis quae aspernatur exercitationem maiores nisi adipisci placeat reiciendis, tempore harum ducimus, enim veniam!</p>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="slide">
-      <div class="card">
-        <h1>Character Name</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis facere asperiores ea quod voluptatum repudiandae facilis quae aspernatur exercitationem maiores nisi adipisci placeat reiciendis, tempore harum ducimus, enim veniam!</p>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="slide">
-      <div class="card">
-        <h1>Character Name</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis facere asperiores ea quod voluptatum repudiandae facilis quae aspernatur exercitationem maiores nisi adipisci placeat reiciendis, tempore harum ducimus, enim veniam!</p>
-      </div>
-    </swiper-slide>
-  </swiper>
+    <h1>This is the Anime page</h1>
+    <router-link :to="'/anime/' + thumb.name" v-for="thumb in thumbnails" :key="thumb.id">
+      <img :src="thumb.icon" :alt="'Link to ' + thumb.name">
+    </router-link>
   </section>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import "swiper/css/pagination";
 
-import "../css/modules/_test.scss";
+export default {
+  data() {
+    return {
+      api: 'https://toksan-wi-default-rtdb.firebaseio.com/thumbnails.json?orderBy="tag"&startAt="a"&endAt="b"',
+      thumbnails: {}
+    }
+  },
 
-import SwiperCore, {
-  Pagination
-} from 'swiper';
+  created() {
+    this.apiPopulate()
+  },
 
-// install Swiper modules
-SwiperCore.use([Pagination]);
+  mounted() {
+  },
 
-export default defineComponent({
-  name: 'PageIndex',
-
-  components: {
-      Swiper,
-      SwiperSlide,
-    },
-    setup() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-      return {
-        onSwiper,
-        onSlideChange,
-      };
-    },
-})
+  methods: {
+    async apiPopulate() {
+    await fetch(this.api)
+     .then(res => res.json())
+     .then(data => this.thumbnails = data)
+    }
+  }
+}
 </script>
+
+<style>
+
+</style>

@@ -1,5 +1,9 @@
+// $ 
+
 // app global css in SCSS form
-@use 'modules/_header.scss';
+@import 'modules/_header.scss';
+@import 'modules/_home.scss';
+@import 'modules/_characters.scss';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,4 +47,19 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.show {
+	display: block !important;
+}
+
+.wrapper {
+	background: #111111;
+	min-height: 100vh;
+	width: 100%;
+	padding-top: 7vh;
+}
+
+h1 {
+	color: white;
 }

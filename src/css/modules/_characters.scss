@@ -1,0 +1,56 @@
+.swiper {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+
+    .swiper-pagination {
+        position: relative;
+        order: 1;
+        bottom: -50px;
+        
+        &-bullet {
+            background: transparent;
+            border: 1.7px white solid;
+            width: 15px;
+            height: 15px;
+            margin: 0 12px !important;
+            transition: all 0.4s ease;
+
+            &-active {
+                background: white;
+            }
+        }
+    }
+
+    .swiper-slide {
+        .card {
+            position: relative;
+            width: 90%;
+            background: red;
+            height: 55vh;
+            margin: 0 auto;
+
+            &_imgCon {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, -60%);
+                img { width: 100%; }
+            }
+
+            h2 { 
+                text-align: center;
+                font-family: $header-font;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
