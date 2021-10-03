@@ -1,15 +1,15 @@
 <template>
-  <section id="anime" :class="'anime' + content.abbr">
-    <div class="anime_logoCon">
-        <img class="anime_logo" :src="content.logo" :alt="content.title + ' Logo'">
+  <section id="animeSpecific" :class="'animeSpecific animeSpecific_' + content.abbr" :style="{ background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${content.bck}')`}">
+    <div class="animeSpecific_logoCon">
+        <img class="animeSpecific_logo" :src="content.logo" :alt="content.title + ' Logo'">
     </div>
-    <div class="anime_btnCon">
-        <router-link class="anime_btn" :to=" '/' + this.$route.params.name + '/characters'">Characters</router-link>
-        <router-link class="anime_btn" to="/">Episodes</router-link>
+    <div class="animeSpecific_btnCon">
+        <router-link class="animeSpecific_btn" :to=" '/' + this.$route.params.name + '/characters'">Characters</router-link>
+        <router-link class="animeSpecific_btn" to="/">Episodes</router-link>
     </div>
-    <section class="anime_card">
-        <div class="anime_textWrapper">
-            <p class="anime_text" v-for="para in content.landing_info" :key="para.id">{{ para.content }}</p>
+    <section class="animeSpecific_card">
+        <div class="animeSpecific_textWrapper">
+            <p class="animeSpecific_text" v-for="para in content.landing_info" :key="para.id">{{ para.content }}</p>
         </div>
     </section>
   </section>

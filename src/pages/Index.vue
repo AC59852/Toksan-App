@@ -9,11 +9,11 @@
         <div class="explore_itemWrapper"  v-for="thumb in thumbnails" :key="thumb.id">
         <router-link class="explore_item" v-if="thumb.tag == 'anime'" :to="'/anime/' + thumb.name">
           <img class="explore_img" :src="thumb.icon" alt="">
-          <h2 class="explore_title">{{ thumb.abbr }}</h2>
+          <h3 class="explore_title">{{ thumb.abbr }}</h3>
         </router-link>
         <router-link class="explore_item" v-if="thumb.tag == 'character'" :to="'/characters/' + thumb.name">
           <img class="explore_img" :src="thumb.icon" alt="">
-          <h2 class="explore_title">{{ thumb.abbr }}</h2>
+          <h3 class="explore_title">{{ thumb.abbr }}</h3>
         </router-link>
       </div>
       </div>
@@ -42,19 +42,19 @@ export default {
 
   methods: {
     async apiPopulate() {
-    await fetch(this.api)
-     .then(res => res.json())
-     .then(data => this.tryThis(data))
+      await fetch(this.api)
+        .then(res => res.json())
+        .then(data => this.shuffleArray(data))
     },
 
-    tryThis(data) {
+    shuffleArray(data) {
       for (let i = data.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * i)
         const temp = data[i]
         data[i] = data[j]
         data[j] = temp
       }
-      this.thumbnails = data.slice(0, 6)
+      this.thumbnails = data.slice(0, 8)
     }
   }
 }

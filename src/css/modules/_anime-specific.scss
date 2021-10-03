@@ -1,0 +1,63 @@
+#animeSpecific {
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.animeSpecific {
+    &_logoCon {
+        width: 85%;
+        margin: 15px auto;
+
+        img { width: 100%; }
+    }
+
+    &_btnCon {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &_btn {
+        width: 47%;
+        margin: 0 auto;
+        text-align: center;
+        background: #111111cc;
+        padding: 18px 0;
+        font-family: $body-font;
+        letter-spacing: $standard-ls;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        border-radius: 900000px;
+    }
+
+    &_card {
+        height: 65vh;
+        background: #111111cc;
+        width: 95%;
+        margin: 5% auto 0;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: $standard-br;
+    }
+
+    &_textWrapper {
+        width: 88%;
+        margin: 0 auto 0;
+    }
+
+    &_text {
+        font-family: $body-font;
+        font-size: 15px;
+        color: white;
+        font-weight: 600;
+        letter-spacing: $standard-ls;
+        line-height: 19px;
+        margin: 15px 0;
+    }
+}
