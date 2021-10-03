@@ -28,7 +28,9 @@
         &_img { 
             width: 100%;
             filter: brightness(0.6);
-            border-radius: $standard-br; 
+            border-radius: $standard-br;
+            object-fit: cover;
+            object-position: center; 
         }
 
         &_title {
