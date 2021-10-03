@@ -1,9 +1,23 @@
 <template>
   <section id="home">
-    <h1>This is the Home page</h1>
-    <!-- <router-link :to="'/anime/' + thumb.name" v-for="thumb in thumbnails" :key="thumb.id">
-      <img :src="thumb.icon" alt="">
-    </router-link> -->
+    <div class="logoCon">
+      <img class="logo" src="~/assets/icons/toksan_wiki-logo.svg" alt="">
+    </div>
+    <section class="explore">
+      <h2>Explore</h2>
+      <div class="explore_wrapper">
+        <div class="explore_itemWrapper"  v-for="thumb in thumbnails" :key="thumb.id">
+        <router-link class="explore_item" v-if="thumb.tag == 'anime'" :to="'/anime/' + thumb.name">
+          <img class="explore_img" :src="thumb.icon" alt="">
+          <h2 class="explore_title">{{ thumb.abbr }}</h2>
+        </router-link>
+        <router-link class="explore_item" v-if="thumb.tag == 'character'" :to="'/characters/' + thumb.name">
+          <img class="explore_img" :src="thumb.icon" alt="">
+          <h2 class="explore_title">{{ thumb.abbr }}</h2>
+        </router-link>
+      </div>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -14,13 +28,13 @@ export default {
   
   data() {
     return {
-      api: 'https://toksan-wi-default-rtdb.firebaseio.com/thumbnails.json?orderBy="tag"&startAt="a"&endAt="b"',
+      api: 'https://toksan-wi-default-rtdb.firebaseio.com/thumbnails.json',
       thumbnails: {}
     }
   },
 
   created() {
-    // this.apiPopulate()
+    this.apiPopulate()
   },
 
   mounted() {
@@ -30,7 +44,17 @@ export default {
     async apiPopulate() {
     await fetch(this.api)
      .then(res => res.json())
-     .then(data => this.thumbnails = data)
+     .then(data => this.tryThis(data))
+    },
+
+    tryThis(data) {
+      for (let i = data.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * i)
+        const temp = data[i]
+        data[i] = data[j]
+        data[j] = temp
+      }
+      this.thumbnails = data.slice(0, 6)
     }
   }
 }
