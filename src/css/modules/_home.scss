@@ -2,13 +2,22 @@
     color: white;
 
     .logoCon {
-        width: 80%;
-        margin: 10% auto 5%;
+        width: 85%;
+        margin: 50px auto 60px;
 
         .logo { width: 100%; }
     }
 
     .explore {
+        padding-bottom: 5%;
+
+        h2 {
+            font-family: $header-font;
+            font-weight: bold;
+            font-size: 22px;
+            margin: 0 10% 20px;
+            letter-spacing: $standard-ls;
+        }
 
         &_wrapper {
             display: flex;
@@ -41,7 +50,7 @@
             color: white;
             font-family: $header-font;
             font-weight: bold;
-            font-size: 36px;
+            font-size: 28px;
             letter-spacing: 0.05em;
             text-align: center;
         }

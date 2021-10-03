@@ -4,6 +4,7 @@ header {
     left: 0;
     z-index: 99999;
     width: 100%;
+    max-width: 500px;
     background: transparent;
 
     .headerCon {
@@ -21,11 +22,15 @@ header {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+            font-family: $body-font;
+            font-weight: 900;
+            font-size: 14px;
+            letter-spacing: 0.5px;
         }
 
         .header_imgCon {
             width: 20px;
-            margin: 0 20px;
+            margin: 0 30px;
             &:nth-child(1) {
                 width: 11px;
             }
