@@ -8,11 +8,12 @@
 </template>
 
 <script>
-
+import animeJson from '../assets/wiki.json'
 export default {
   data() {
     return {
       api: 'https://toksan-wi-default-rtdb.firebaseio.com/thumbnails.json?orderBy="tag"&startAt="a"&endAt="b"',
+      apiLocal: animeJson,
       thumbnails: {}
     }
   },
@@ -26,9 +27,13 @@ export default {
 
   methods: {
     async apiPopulate() {
-    await fetch(this.api)
-     .then(res => res.json())
-     .then(data => this.thumbnails = data)
+    console.log(this.apiLocal.thumbnails)
+    const filteredArr = this.apiLocal.thumbnails;
+
+    const result = filteredArr.filter(thumb => thumb.tag != 'character')
+
+    this.thumbnails = result
+    
     }
   }
 }

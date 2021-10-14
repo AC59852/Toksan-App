@@ -44,6 +44,7 @@
   import "swiper/css/pagination";
   import "../css/modules/_characters.scss";
   import VueResizeText from 'vue3-resize-text'
+  import json from '../assets/wiki.json'
   
   import SwiperCore, {
       Pagination
@@ -60,6 +61,7 @@
     data() {
         return {
             api: 'https://toksan-wi-default-rtdb.firebaseio.com/anime/',
+            apiLocal: json,
 
             slides: [
                 {id: 1, data: 'test'},
@@ -84,10 +86,8 @@
     },
 
     methods: {
-        async getContent(name) {
-            await fetch(this.api + name + '/characters.json')
-              .then(res => res.json())
-              .then(data => this.content = data)
+        getContent(name) {
+            this.content = this.apiLocal.anime[name].characters
         }
     },
 

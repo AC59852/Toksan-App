@@ -22,13 +22,14 @@
 </template>
 
 <script>
-
+import json from '../assets/wiki.json'
 export default {
   name: "Home",
   
   data() {
     return {
       api: 'https://toksan-wi-default-rtdb.firebaseio.com/thumbnails.json',
+      apiLocal: json,
       thumbnails: {}
     }
   },
@@ -42,9 +43,8 @@ export default {
 
   methods: {
     async apiPopulate() {
-      await fetch(this.api)
-        .then(res => res.json())
-        .then(data => this.shuffleArray(data))
+      const res = this.apiLocal.thumbnails.slice()
+      await this.shuffleArray(res)
     },
 
     shuffleArray(data) {
@@ -54,6 +54,7 @@ export default {
         data[i] = data[j]
         data[j] = temp
       }
+      console.log(data)
       this.thumbnails = data.slice(0, 8)
     }
   }
