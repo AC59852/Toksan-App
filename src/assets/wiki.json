@@ -39,9 +39,11 @@
                 "last_name": "Yeager",
                 "full_name": "Eren Yeager",
                 "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida.",
-                "basic_info": {
+                "imgs": {
                   "hero_img": "https://bit.ly/3zM3on1",
-                  "profile_img": "https://bit.ly/2YpIiy5",
+                  "profile_img": "https://bit.ly/2YpIiy5"
+                },
+                "basic_info": {
                   "age": 19,
                   "weight": 180,
                   "height": "1m 83cm",
