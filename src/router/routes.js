@@ -9,7 +9,7 @@ const routes = [
       { path: '/search', component: () => import('pages/Search.vue'), name: "Search" },
       { path: '/anime/:name', component: () => import('pages/Anime-Specific.vue'), name: "" },
       { path: '/:name/characters', component: () => import('pages/Anime-Characters.vue'), name: "Characters" },
-      { path: '/characters/:character', component: () => import('pages/Character-Specific.vue'), name: "" },
+      { path: '/:name/:character', component: () => import('pages/Character-Specific.vue'), name: "" },
     ]
   },
 

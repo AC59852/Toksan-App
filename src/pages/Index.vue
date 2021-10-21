@@ -3,32 +3,22 @@
     <div class="logoCon">
       <img class="logo" src="~/assets/icons/toksan_wiki-logo.svg" alt="">
     </div>
-    <section class="explore">
-      <h2>Explore</h2>
-      <div class="explore_wrapper">
-        <div class="explore_itemWrapper"  v-for="thumb in thumbnails" :key="thumb.id">
-        <router-link class="explore_item" v-if="thumb.tag == 'anime'" :to="'/anime/' + thumb.name">
-          <img class="explore_img" :src="thumb.icon" alt="">
-          <h3 class="explore_title">{{ thumb.abbr }}</h3>
-        </router-link>
-        <router-link class="explore_item" v-if="thumb.tag == 'character'" :to="'/characters/' + thumb.name">
-          <img class="explore_img" :src="thumb.icon" alt="">
-          <h3 class="explore_title">{{ thumb.abbr }}</h3>
-        </router-link>
-      </div>
-      </div>
-    </section>
+    <IndexExplore class="explore" :thumbnails="thumbnails" />
+    <IndexRecent class="recent" :recents="apiLocal.thumbnails" />
   </section>
 </template>
 
 <script>
-
+import json from '../assets/wiki.json'
+import IndexExplore from 'components/IndexExplore.vue'
+import IndexRecent from 'components/IndexRecent.vue'
 export default {
   name: "Home",
   
   data() {
     return {
       api: 'https://toksan-wi-default-rtdb.firebaseio.com/thumbnails.json',
+      apiLocal: json,
       thumbnails: {}
     }
   },
@@ -42,9 +32,8 @@ export default {
 
   methods: {
     async apiPopulate() {
-      await fetch(this.api)
-        .then(res => res.json())
-        .then(data => this.shuffleArray(data))
+      const res = this.apiLocal.thumbnails.slice()
+      await this.shuffleArray(res)
     },
 
     shuffleArray(data) {
@@ -56,6 +45,11 @@ export default {
       }
       this.thumbnails = data.slice(0, 8)
     }
+  },
+
+  components: {
+    IndexExplore,
+    IndexRecent
   }
 }
 </script>

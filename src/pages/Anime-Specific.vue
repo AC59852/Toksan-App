@@ -16,11 +16,13 @@
 </template>
 
 <script>
+import json from '../assets/wiki.json'
 export default {
 
     data() {
         return {
             api: 'https://toksan-wi-default-rtdb.firebaseio.com/anime/',
+            apiLocal: json,
             content: {}
         }
     },
@@ -36,10 +38,7 @@ export default {
 
     methods: {
         getContent(name) {
-            fetch(this.api + name + '.json')
-              .then(res => res.json())
-              .then(data => this.content = data)
-              .then(data => console.log(data))
+            this.content = this.apiLocal.anime[name]
         }
     }
 }

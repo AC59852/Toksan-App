@@ -1,35 +1,28 @@
 <template>
-  <section>
-    <h1>This is the Anime page</h1>
-    <router-link :to="'/anime/' + thumb.name" v-for="thumb in thumbnails" :key="thumb.id">
-      <img :src="thumb.icon" :alt="'Link to ' + thumb.name">
-    </router-link>
-  </section>
+  <section class="anime">
+      <div class="anime__wrapper">
+        <div class="anime__itemWrapper"  v-for="thumb in thumbnails" :key="thumb.id">
+          <router-link class="explore__item" v-if="thumb.tag == 'anime'" :to="'/anime/' + thumb.anime">
+            <img class="anime__img" :src="thumb.icon" alt="">
+            <h3 class="anime__title">{{ thumb.abbr }}</h3>
+          </router-link>
+          </div>
+        </div>
+    </section>
 </template>
 
 <script>
-
+import json from '../assets/wiki.json'
 export default {
   data() {
     return {
-      api: 'https://toksan-wi-default-rtdb.firebaseio.com/thumbnails.json?orderBy="tag"&startAt="a"&endAt="b"',
+      apiLocal: json,
       thumbnails: {}
     }
   },
 
   created() {
-    this.apiPopulate()
-  },
-
-  mounted() {
-  },
-
-  methods: {
-    async apiPopulate() {
-    await fetch(this.api)
-     .then(res => res.json())
-     .then(data => this.thumbnails = data)
-    }
+    this.thumbnails = this.apiLocal.thumbnails
   }
 }
 </script>

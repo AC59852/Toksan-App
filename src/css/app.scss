@@ -5,6 +5,7 @@
 @import 'modules/_home.scss';
 @import 'modules/_anime-specific.scss';
 @import 'modules/_characters.scss';
+@import 'modules/_anime.scss';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,6 +67,6 @@ table {
 	margin: 0 auto;
 }
 
-h1 {
+h1, h2 {
 	color: white;
 }

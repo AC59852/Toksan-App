@@ -1,0 +1,20 @@
+.anime {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__itemWrapper {
+        width: 43%;
+        position: relative;
+        margin: 2%;
+    }
+
+    &__img { @include index-icon-img }
+
+    &__title { 
+        @include index-icon-heading;
+        font-size: 54px;
+    }
+}
