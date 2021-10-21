@@ -21,7 +21,7 @@
           </div>
           <div class="card_footer">
             <router-link 
-              :to=" '/characters/' + slideContent.full_name"
+              :to=" '/' + this.$route.params.name + '/' + slideContent.full_name"
               class="card_link"
             >
               Read More

@@ -1,20 +1,20 @@
 {
   "thumbnails": [
-    { "id": 1, "tag": "anime", "name": "Attack on Titan", "abbr": "AOT", "icon": "https://bit.ly/3ib6Vpb" },
-    { "id": 2, "tag": "anime", "name": "Sword Art Online", "abbr": "SAO", "icon": "https://bit.ly/2ZuVIsR" },
-    { "id": 3, "tag": "anime", "name": "My Hero Academia", "abbr": "MHA", "icon": "https://bit.ly/3ibxOsN" },
-    { "id": 4, "tag": "anime", "name": "Kill La Kill", "abbr": "KLK", "icon": "https://bit.ly/3ode0cu" },
-    { "id": 5, "tag": "anime", "name": "One Punch Man", "abbr": "OPM", "icon": "https://bit.ly/39DxtdS" },
-    { "id": 6, "tag": "anime", "name": "Hunter x Huner", "abbr": "HXH", "icon": "https://bit.ly/39Fkf02" },
-    { "id": 7, "tag": "anime", "name": "Tokyo Ghoul", "abbr": "TG", "icon": "https://bit.ly/2XTHNMk" },
-    { "id": 8, "tag": "anime", "name": "Demon Slayer", "abbr": "DS", "icon": "https://bit.ly/3zEGzSg" },
-    { "id": 9, "tag": "character", "name": "Eren Yeager", "abbr": "Eren", "icon": "https://bit.ly/3itl3u6" },
-    { "id": 10, "tag": "character", "name": "Kirigaya Kazuto", "abbr": "Kirito", "icon": "https://bit.ly/3l7Gi6s" },
-    { "id": 11, "tag": "character", "name": "Nezuko Kamado", "abbr": "Nezuko", "icon": "https://bit.ly/2WBx34O" },
-    { "id": 12, "tag": "character", "name": "Toshinori Yagi", "abbr": "All Might", "icon": "https://bit.ly/3iwcFtD" },
-    { "id": 13, "tag": "character", "name": "Touka Kirishima", "abbr": "Touka", "icon": "https://bit.ly/3D7DvA7" },
-    { "id": 14, "tag": "character", "name": "Saitama", "abbr": "Saitama", "icon": "https://bit.ly/3A6jgB1" },
-    { "id": 15, "tag": "character", "name": "Hashibira Inosuke", "abbr": "Inosuke", "icon": "https://bit.ly/3os6VF9" }
+    { "id": 1, "tag": "anime", "anime": "Attack on Titan", "abbr": "AOT", "icon": "https://bit.ly/3ib6Vpb" },
+    { "id": 2, "tag": "anime", "anime": "Sword Art Online", "abbr": "SAO", "icon": "https://bit.ly/2ZuVIsR" },
+    { "id": 3, "tag": "anime", "anime": "My Hero Academia", "abbr": "MHA", "icon": "https://bit.ly/3ibxOsN" },
+    { "id": 4, "tag": "anime", "anime": "Kill La Kill", "abbr": "KLK", "icon": "https://bit.ly/3ode0cu" },
+    { "id": 5, "tag": "anime", "anime": "One Punch Man", "abbr": "OPM", "icon": "https://bit.ly/39DxtdS" },
+    { "id": 6, "tag": "anime", "anime": "Hunter x Huner", "abbr": "HXH", "icon": "https://bit.ly/39Fkf02" },
+    { "id": 7, "tag": "anime", "anime": "Tokyo Ghoul", "abbr": "TG", "icon": "https://bit.ly/2XTHNMk" },
+    { "id": 8, "tag": "anime", "anime": "Demon Slayer", "abbr": "DS", "icon": "https://bit.ly/3zEGzSg" },
+    { "id": 9, "tag": "character", "anime": "Attack on Titan", "character": "Eren Yeager", "abbr": "Eren", "icon": "https://bit.ly/3itl3u6" },
+    { "id": 10, "tag": "character", "anime": "Sword Art Online", "character": "Kirigaya Kazuto", "abbr": "Kirito", "icon": "https://bit.ly/3l7Gi6s" },
+    { "id": 11, "tag": "character", "anime": "Demon Slayer", "character": "Nezuko Kamado", "abbr": "Nezuko", "icon": "https://bit.ly/2WBx34O" },
+    { "id": 12, "tag": "character", "anime": "My Hero Academia", "character": "Toshinori Yagi", "abbr": "All Might", "icon": "https://bit.ly/3iwcFtD" },
+    { "id": 13, "tag": "character", "anime": "Tokyo Ghoul", "character": "Touka Kirishima", "abbr": "Touka", "icon": "https://bit.ly/3D7DvA7" },
+    { "id": 14, "tag": "character", "anime": "One Punch Man", "character": "Saitama", "abbr": "Saitama", "icon": "https://bit.ly/3A6jgB1" },
+    { "id": 15, "tag": "character", "anime": "Demon Slayer", "character": "Hashibira Inosuke", "abbr": "Inosuke", "icon": "https://bit.ly/3os6VF9" }
     ],
 
     "anime": {
@@ -29,8 +29,8 @@
             {"id": 2, "content": "To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations."},
             {"id": 3, "content": "After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls."}
             ],
-            "characters": [
-              {
+            "characters": {
+              "Eren Yeager": {
                 "id": 1,
                 "fontRatio": 0.29,
                 "card_bck": "https://bit.ly/3CSw3Zv",
@@ -41,14 +41,14 @@
                 "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida.",
                 "imgs": {
                   "hero_img": "https://bit.ly/3zM3on1",
-                  "profile_img": "https://bit.ly/2YpIiy5"
+                  "profile_img": "https://bit.ly/3p6T5Zc"
                 },
-                "basic_info": {
-                  "age": 19,
-                  "weight": 180,
-                  "height": "1m 83cm",
-                  "Affiliation": "Yeagerists" 
-                },
+                "basic_info": [
+                  {"id": 0, "title": "age", "value": 19},
+                  {"id": 1, "title": "weight", "value": "180 lbs"},
+                  {"id": 2, "title": "height", "value": "1m 83cm"},
+                  {"id": 3, "title": "Affiliation", "value": "Yeagerists"} 
+                ],
                 "details": {
                   "timeline": [
                     { "id": 1, "year": 835, "events": [] },
@@ -64,12 +64,12 @@
                     { "id": 6, "year": 854, "events": [] }
                   ],
                   "relationships": [],
-                  "key_moments": [],
+                  "key moments": [],
                   "skills": [],
                   "more": []
                 }
               },
-              {
+              "Mikasa Ackerman": {
                 "id": 2,
                 "fontRatio": 0.44,
                 "first_name": "Mikasa",
@@ -77,7 +77,7 @@
                 "full_name": "Mikasa Ackerman",
                 "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida."
               },
-              {
+              "Armin Arlert": {
                 "id": 3,
                 "fontRatio": 0.38,
                 "first_name": "Armin",
@@ -85,7 +85,7 @@
                 "full_name": "Armin Arlert",
                 "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida."
               }
-            ]
+            }
       },
       "Sword Art Online": {
         "title": "Sword Art Online",
