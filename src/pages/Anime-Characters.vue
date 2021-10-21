@@ -11,6 +11,9 @@
         :key="slideContent.id"
         :virtualIndex="slideContent.id"
       >
+      <div class="char_bck">
+        <div class="char_img" :style="{backgroundImage: 'url(' + slideContent.card_bck + ')'}"></div>
+      </div>
         <div class="card">
           <div class="card_imgCon">
             <img :src="slideContent.card_img" alt="" class="card_img">
@@ -20,6 +23,10 @@
               <p class="card_para">{{ slideContent.bio }}</p>
           </div>
           <div class="card_footer">
+            <div class="card_flair">
+              <div>&#8226;&#8226;&#8226;</div>
+              <div>&#8226;&#8226;&#8226;</div>
+            </div>
             <router-link 
               :to=" '/' + this.$route.params.name + '/' + slideContent.full_name"
               class="card_link"

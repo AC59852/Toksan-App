@@ -1,17 +1,18 @@
 .swiper {
     display: flex;
     flex-direction: column;
-    overflow: visible;
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
+    overflow-x: clip;
+    overflow-y: visible !important;
     transform: translate(-50%, -30%);
 
     .swiper-pagination {
-        position: relative;
+        position: absolute;
         order: 1;
-        bottom: -50px;
+        bottom: -10vh;
         
         &-bullet {
             background: transparent;
@@ -31,17 +32,18 @@
         .card {
             position: relative;
             width: 90%;
-            background: red;
-            height: 55vh;
+            background: #111111;
+            height: 53vh;
             margin: 0 auto;
+            border-radius: $standard-br;
 
             &_imgCon {
                 position: absolute;
                 top: 0;
                 left: 50%;
                 width: 100%;
-                transform: translate(-50%, -60%);
-                img { width: 100%; }
+                transform: translate(-55%, -65%);
+                img { width: 105%; }
             }
 
             h2 { 
@@ -51,6 +53,73 @@
                 text-transform: uppercase;
                 letter-spacing: 1px;
             }
+
+            &_para {
+                font-family: $body-font;
+                font-size: 17px;
+                width: 90%;
+                margin: 3% auto;
+                letter-spacing: 0.03em;
+                color: white;
+                font-weight: 700;
+                line-height: 115%;
+            }
+
+            &_footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 90%;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &_flair {
+                div {
+                    font-size: 23px;
+                    margin: -14px 0;
+                    color: white;
+                }
+            }
+
+            &_link {
+                position: relative;
+                font-family: $body-font;
+                font-size: $body-size;
+                color: white;
+                text-decoration: none;
+                letter-spacing: 0.04em;
+                margin-right: 8%;
+                &::after {
+                    position: absolute;
+                    content: url('~assets/icons/read-more.svg');
+                    right: -30%;
+                }
+            }
         }
+    }
+}
+
+
+// this is a horrible hack but i don't know swiper well enough
+// to make a better fix, working on dynamic solution
+.char_bck {
+    position: absolute;
+    top: -65%;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    filter: brightness(0.75);
+
+    .char_img {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        filter: blur(10px);
+        transform: scale(1.1);
     }
 }
