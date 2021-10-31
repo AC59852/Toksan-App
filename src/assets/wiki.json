@@ -36,11 +36,13 @@
                 "card_bck": "https://bit.ly/3DUQ962",
                 "card_img": "https://bit.ly/3ukukJF",
                 "first_name": "Eren",
+                "firstName_FR": 0.31,
                 "last_name": "Yeager",
+                "lastName_FR": 0.7,
                 "full_name": "Eren Yeager",
                 "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida.",
                 "imgs": {
-                  "hero_img": "https://bit.ly/3zM3on1",
+                  "hero_img": "https://bit.ly/3EB8F3s",
                   "profile_img": "https://bit.ly/3p6T5Zc"
                 },
                 "basic_info": [

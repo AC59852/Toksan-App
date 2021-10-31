@@ -36,6 +36,8 @@
             height: 53vh;
             margin: 0 auto;
             border-radius: $standard-br;
+            display: flex;
+            flex-direction: column;
 
             &_imgCon {
                 position: absolute;
@@ -54,15 +56,19 @@
                 letter-spacing: 1px;
             }
 
+            &__contentCon { height: 100%; }
+
             &_para {
                 font-family: $body-font;
                 font-size: 17px;
                 width: 90%;
-                margin: 3% auto;
+                margin: 1% auto;
                 letter-spacing: 0.03em;
                 color: white;
                 font-weight: 700;
-                line-height: 115%;
+                line-height: 120%;
+                height: 60%;
+                overflow-y: scroll;
             }
 
             &_footer {

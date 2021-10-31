@@ -19,7 +19,8 @@
             <img :src="slideContent.card_img" alt="" class="card_img">
           </div>
           <div class="card_contentCon">
-              <h2 v-resize-text="{ratio: slideContent.fontRatio}" class="card_heading">{{ slideContent.first_name }}</h2>
+              <h2 v-if="!slideContent.alias" v-resize-text="{ratio: slideContent.fontRatio}" class="card_heading">{{ slideContent.first_name }}</h2>
+              <h2 v-if="slideContent.alias" v-resize-text="{ratio: slideContent.aliasRatio}" class="card_heading">{{ slideContent.alias }}</h2>
               <p class="card_para">{{ slideContent.bio }}</p>
           </div>
           <div class="card_footer">
