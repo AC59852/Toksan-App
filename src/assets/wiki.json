@@ -8,7 +8,7 @@
     { "id": 6, "tag": "anime", "anime": "Hunter x Huner", "abbr": "HXH", "icon": "https://bit.ly/39Fkf02" },
     { "id": 7, "tag": "anime", "anime": "Tokyo Ghoul", "abbr": "TG", "icon": "https://bit.ly/2XTHNMk" },
     { "id": 8, "tag": "anime", "anime": "Demon Slayer", "abbr": "DS", "icon": "https://bit.ly/3zEGzSg" },
-    { "id": 9, "tag": "character", "anime": "Attack on Titan", "character": "Eren Yeager", "abbr": "Eren", "icon": "https://bit.ly/3itl3u6" },
+    { "id": 9, "tag": "character", "anime": "Attack on Titan", "character": "Eren Jaeger", "abbr": "Eren", "icon": "https://bit.ly/3itl3u6" },
     { "id": 10, "tag": "character", "anime": "Sword Art Online", "character": "Kirigaya Kazuto", "abbr": "Kirito", "icon": "https://bit.ly/3l7Gi6s" },
     { "id": 11, "tag": "character", "anime": "Demon Slayer", "character": "Nezuko Kamado", "abbr": "Nezuko", "icon": "https://bit.ly/2WBx34O" },
     { "id": 12, "tag": "character", "anime": "My Hero Academia", "character": "Toshinori Yagi", "abbr": "All Might", "icon": "https://bit.ly/3iwcFtD" },
@@ -27,45 +27,83 @@
           "landing_info": [
             {"id": 1, "content": "Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. "},
             {"id": 2, "content": "To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations."},
-            {"id": 3, "content": "After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls."}
+            {"id": 3, "content": "After witnessing a horrific personal loss at the hands of the invading creatures, Eren Jaeger dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls."}
             ],
             "characters": {
-              "Eren Yeager": {
+              "Eren Jaeger": {
                 "id": 1,
                 "fontRatio": 0.29,
                 "card_bck": "https://bit.ly/3DUQ962",
                 "card_img": "https://bit.ly/3ukukJF",
                 "first_name": "Eren",
                 "firstName_FR": 0.31,
-                "last_name": "Yeager",
+                "last_name": "Jaeger",
                 "lastName_FR": 0.7,
-                "full_name": "Eren Yeager",
+                "full_name": "Eren Jaeger",
                 "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida.",
                 "imgs": {
                   "hero_img": "https://bit.ly/3EB8F3s",
                   "profile_img": "https://bit.ly/3p6T5Zc"
                 },
                 "basic_info": [
-                  {"id": 0, "title": "age", "value": 19},
+                  {"id": 0, "title": "age", "value": "19 Years Old"},
                   {"id": 1, "title": "weight", "value": "180 lbs"},
                   {"id": 2, "title": "height", "value": "1m 83cm"},
-                  {"id": 3, "title": "Affiliation", "value": "Yeagerists"} 
+                  {"id": 3, "title": "Affiliation", "value": "Jaegerists"} 
                 ],
                 "details": {
                   "timeline": [
-                    { "id": 1, "year": 835, "events": [] },
-                    { "id": 2, "year": 844, "events": [] },
+                    { "id": 1, "year": 835, "events": [
+                      {"id": 1, "details": "Eren Jaeger is born to Grisha and Carla Jaeger"}
+                    ] },
+                    { "id": 2, "year": 844, "events": [
+                      {"id": 1, "details": "Eren rescues Mikasa Ackerman after being abducted by human traffickers, who kill her parents. Eren kills two of the traffickers."},
+                      {"id": 2, "details": "Eren invites Mikasa to be taken in by the Jaeger family."}
+                    ] },
                     { "id": 3, "year": 845, "events": [
                         {"id": 1, "details": "Grisha Jaeger travels to the Interior, but not before promising to show his son Eren the secret within his basement when he returns."},
                         {"id": 2, "details": "The Colossal Titan breaches the outer gate of Shiganshina District, destroying the century-long peace within the Walls as Titans begin to enter the city. Carla Jaeger is eaten by a smiling Titan."},
                         {"id": 3, "details": "Grisha reunites with Eren and injects him with a serum which erases parts of his memory while also presumably giving him the ability to turn into a Titan. Grisha then disappears."}
                       ] 
                     },
-                    { "id": 4, "year": 848, "events": [] },
-                    { "id": 5, "year": 850, "events": [] },
+                    { "id": 4, "year": 847, "events": [
+                      {"id": 1, "details": "The 104th Cadet Corps begins, training Eren and friends on tools such as the Omni-directional mobility gear, blades that can pierce Titans', and more."},
+                      {"id": 2, "details": "Eren meets notable members, and later friends: Conny, Sasha, Annie, Reiner, Historia, and others who have joined the 104th."},
+                      {"id": 3, "details": "Eren begins taking fighting lessons from Annie."}
+                    ] },
+                    { "id": 5, "year": 850, "events": [
+                      {"id": 1, "details": "The Colossal Titan breaches the outer gate of Trost District. The 104th Cadet Corps fight their first battle against the Titans."},
+                      {"id": 2, "details": "Eren Jaeger is swallowed by a Titan, but emerges in his Titan form and begins to slay many Titans. After evacuating Trost, Eren is taken into the custody of the Garrison."},
+                      {"id": 3, "details": "A plan to take back the district with Eren's Titan is formed. Eren closes the breach with a giant boulder, saving Trost District. After sealing the breach, Eren returns to human form, falling into a coma."},
+                      {"id": 4, "details": "Eren awakens from his coma in a prison cell. Erwin and Levi tell Eren of what transpired after Trost. Eren is then held on trial before Premier Zachary, eventually being given over to the Scout Regiment."},
+                      {"id": 5, "details": "Eren joins the Scout Regiment under the supervision of the Special Operations Squad, with whom he would later test his Titan abilities over the next month. Hange Zoë tells Eren of their experiments with two Titans left over from the Trost breach."},
+                      {"id": 6, "details": "Eren battles Annie in the Forest of Giant Trees, but is defeated and captured by Annie. Before she can escape, Eren is rescued from her grasp by Mikasa and Levi. The Scout Regiment retreats to Calaneth District and are ordered to surrender Eren to the capital."},
+                      {"id": 7, "details": "Reiner and Bertholdt reveal their Titan identities and mission to Eren and subsequently assume their Titan forms as the Armored and Colossal Titans. A battle ensues on Wall Rose."},
+                      {"id": 8, "details": "The Smiling Titan appears in front of Eren and Mikasa for the first time since the Fall of Shiganshina. Hannes attacks the Titan, but is killed in front of Eren. Eren unleashes the power of the Founding Titan unknowingly. Using this power, Eren commands nearby Titans to devour the Smiling Titan and attack Reiner and Bertholdt."},
+                      {"id": 9, "details": "In a cave underneath Reiss chapel, Rod and Historia place their hands on a chained Eren's back, triggering memories from five years ago. Eren learns that his father, Grisha, had stolen the Titan power of the Reiss family from Historia's sister and murdered all their members, with only Rod managing to escape. Grisha had then injected Eren with a serum, turning Eren into a Titan and eating his dad resulting in Eren inheriting his Titan Powers."},
+                      {"id": 10, "details": "Eren ingests a serum labeled \"armor\" from Rod's bag, creating a hardened Titan for the first time, which he uses to shield Squad Levi from the collapsing cavern. Eren later uses this hardening power to create the Executioner from Hell, to kill Titans from Wall Maria, as well as sealing the Shiganshina gate."},
+                      {"id": 11, "details": "Eren, Mikasa, Levi, and Hange investigate the basement of the Jaeger household, where they discover three books left by Grisha detailing his past in Marley and his knowledge of the Eldian-Marleyan conflict."}
+                    ] },
                     { "id": 6, "year": 854, "events": [] }
                   ],
-                  "relationships": [],
+                  "relationships": [
+                    {"id": 1, "character": "Mikasa", "content": [
+                      {"id": 1, "img": "https://dl.dropboxusercontent.com/s/0idnyra598vjiwe/eren_and_mikasa.png?dl=0", "details": "Eren has a complex relationship with Mikasa. He often displays a brusque, casual attitude with her which belies their deep bond and care for each other. While Mikasa is more open with showing concern for him, Eren only does so when she is injured or in distress. Despite his blunt exterior he is always looking out for her and will not hesitate to comfort or reassure her when he senses that she needs him to."},
+                      {"id": 2, "details": "They do not always agree, but Eren will usually not stop Mikasa from doing what she wants so long as it is within reason. He also seems to harbor somewhat of an inferiority complex towards her due to her outranking him in both strength and battle skill. This is further affirmed by her desire to constantly keep tabs on him and keep him out of trouble - a habit he generally viewed as annoying."}
+                    ]},
+                    {"id": 2, "character": "Armin", "content": [
+                      {"id": 1, "img": "", "details": "this is some data for armin"}
+                    ]},
+                    {"id": 4, "character": "Levi", "content": [
+                      {"id": 1, "img": "", "details": "this is some data for Levi"}
+                    ]},
+                    {"id": 5, "character": "Jean", "content": [
+                      {"id": 1, "img": "", "details": "this is some data for Jean"}
+                    ]},
+                    {"id": 6, "character": "Annie", "content": [
+                      {"id": 1, "img": "", "details": "this is some data for Annie"}
+                    ]}
+                  ],
                   "key moments": [],
                   "skills": [],
                   "more": []
@@ -93,11 +131,45 @@
         "title": "Sword Art Online",
         "abbr": "SAO",
         "icon": "https://bit.ly/2ZuVIsR",
+        "bck": "https://bit.ly/2ZWBbhn",
         "landing_info": [
           {"id": 1, "content": "This is some placeholder content for SAO 1"},
           {"id": 2, "content": "This is some placeholder content for SAO 2"},
           {"id": 3, "content": "This is some placeholder content for SAO 3"}
-        ]
+        ],
+        "characters": {
+          "Kirigaya Kazuto": {
+            "id": 1,
+            "fontRatio": 0.29,
+            "card_bck": "https://bit.ly/2ZV6XeP",
+            "card_img": "https://bit.ly/3BRhkxj",
+            "first_name": "Kirigaya",
+            "firstName_FR": 0.31,
+            "last_name": "Kazuto",
+            "lastName_FR": 0.7,
+            "full_name": "Kirigaya Kazuto",
+            "alias": "Kirito",
+            "aliasRatio": 0.31,
+            "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida.",
+            "imgs": {
+              "hero_img": "https://bit.ly/3w8AFZz",
+              "profile_img": "https://bit.ly/3l7Gi6s"
+            },
+            "basic_info": [
+              {"id": 0, "title": "age", "value": "17 Years Old"},
+              {"id": 1, "title": "weight", "value": "130 lbs"},
+              {"id": 2, "title": "height", "value": "1m 72cm"},
+              {"id": 3, "title": "guild", "value": "Solo Player"} 
+            ],
+            "details": {
+              "timeline": [],
+              "relationships": [],
+              "key moments": [],
+              "skills": [],
+              "more": []
+            }
+          }
+        }
       }
     }
 }

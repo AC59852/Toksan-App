@@ -30,6 +30,7 @@
     &__name {
         letter-spacing: $standard-ls;
         line-height: 0.9em;
+        font-family: $header-font;
 
         &--first { text-transform: uppercase; }
     }
@@ -70,7 +71,12 @@
     &__dataSelector {
         display: flex;
         overflow-x: scroll;
+        overflow-y: hidden;
         width: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__btn {
@@ -95,5 +101,56 @@
 
     &__btn.active {
         color: white;
+    }
+
+    .timeline {
+        &__yearWrapper { @include character-selector-wrapper }
+
+        &__year { @include character-selector }
+
+        &__events {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 6%;
+        }
+
+        &__event { @include character-data }
+    }
+
+    .relationship {
+        &__charWrapper { @include character-selector-wrapper }
+
+        &__char { @include character-selector }
+
+        &__data {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 6%; 
+        }
+
+        &__info { 
+            @include character-data;
+            position: relative;
+
+            &:first-child {
+                margin-top: 40%;
+            }
+
+            p.has-img {
+                margin-top: 7%;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: -63%;
+            left: 50%;
+            transform: translate(-50%, 40%);
+            display: block;
+            width: 135px;
+            height: 135px;
+            clip-path: circle();
+            object-fit: cover;
+        }
     }
 }

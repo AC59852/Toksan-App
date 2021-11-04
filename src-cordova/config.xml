@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.wiki.toksan.app" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.wiki.toksan.app" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Toksan Wiki</name>
     <description>Toksan Wiki is a mobile app dedicated to providing information on characters and settings from the Featured Anime on the Toksan Anime website.</description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
@@ -76,5 +76,8 @@
         <splash src="res/screen/ios/Default@2x~ipad~comany.png" />
     </platform>
     <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-maxSdkVersion" value="30" />
+    <preference name="android-targetSdkVersion" value="30" />
     <allow-navigation href="about:*" />
 </widget>
