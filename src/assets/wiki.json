@@ -104,7 +104,12 @@
                       {"id": 1, "img": "", "details": "this is some data for Annie"}
                     ]}
                   ],
-                  "key moments": [],
+                  "key moments": [
+                    {"id": 1, "img": "https://bit.ly/3wjW1Dl", "title": "Saving Mikasa's Life", "details": [
+                      {"id": 1, "content": "Eren saved Mikasa from being sold into slavery by bandits. On a visit to the Ackermanns' home, he and his father discovered both parents murdered and the daughter missing. Eren, wanting to rescue the missing girl as soon as possible, managed to track the bandits' trail to a small cabin in the forest behind the house."},
+                      {"id": 2, "content": "Feigning distress and saying that he was lost, Eren got the bandits to drop their guard, slitting ones’ throat, and stabbing another, though caught off guard by a third, who proceeded to strangle him. Mikasa picked up the knife and stabbed the bandit through the heart, killing him instantly."}
+                    ]}
+                  ],
                   "skills": [],
                   "more": []
                 }

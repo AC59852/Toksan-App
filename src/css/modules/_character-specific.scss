@@ -133,7 +133,7 @@
             position: relative;
 
             &:first-child {
-                margin-top: 40%;
+                margin-top: 45%;
             }
 
             p.has-img {
@@ -143,14 +143,62 @@
 
         &__img {
             position: absolute;
-            top: -63%;
+            top: -67%;
             left: 50%;
             transform: translate(-50%, 40%);
             display: block;
-            width: 135px;
-            height: 135px;
+            width: 150px;
+            height: 150px;
             clip-path: circle();
             object-fit: cover;
+        }
+    }
+
+    .moments {
+        &__data {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 6%; 
+        }
+
+        &__info { 
+            @include character-data;
+            position: relative;
+
+            &:first-child {
+                margin-top: 45%;
+            }
+
+            p.has-img {
+                margin-top: 7%;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            top: -40%;
+            left: 50%;
+            transform: translate(-50%, 40%);
+            display: block;
+            width: 150px;
+            height: 150px;
+            clip-path: circle();
+            object-fit: cover;
+        }
+
+        &__title {
+            font-size: 32px;
+            text-align: center;
+            font-family: $header-font;
+            margin-top: 5%;
+        }
+
+        &__details {
+            margin: 5% 0 3%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
