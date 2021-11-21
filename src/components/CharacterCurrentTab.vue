@@ -1,5 +1,5 @@
 <template>
-  <h1 v-for="dataBtns in currentTab" :key="dataBtns.id">{{ dataBtns }}</h1>
+  <h2 v-for="dataBtns in currentTab" :key="dataBtns.id">{{ dataBtns }}</h2>
 </template>
 
 <script>

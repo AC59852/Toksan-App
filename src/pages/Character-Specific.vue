@@ -68,6 +68,12 @@ export default {
       console.log(this.$route.params)
     },
 
+    mounted() {
+      if(this.content.firstName_FR >= 0.59) {
+        document.querySelector(".character__name--first").style.marginTop = "30px"
+      }
+    },
+
     methods: {
       async apiPopulate(route, character) {
         this.content = characterData.anime[route].characters[character]

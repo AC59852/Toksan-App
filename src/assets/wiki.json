@@ -92,13 +92,17 @@
                       {"id": 2, "details": "They do not always agree, but Eren will usually not stop Mikasa from doing what she wants so long as it is within reason. He also seems to harbor somewhat of an inferiority complex towards her due to her outranking him in both strength and battle skill. This is further affirmed by her desire to constantly keep tabs on him and keep him out of trouble - a habit he generally viewed as annoying."}
                     ]},
                     {"id": 2, "character": "Armin", "content": [
-                      {"id": 1, "img": "", "details": "this is some data for armin"}
+                      {"id": 1, "img": "https://bit.ly/3FoMiif", "details": "Armin is Eren's closest friend, who inspired him to dream of the world beyond the Walls (and in doing so, became partially responsible for motivating him to join the Scout Regiment). During their childhood, they were snubbed by other children as well as adults for their \"heretical\" ideas. Armin himself is frequently targeted by bullies, whom Eren would constantly try to fend off. This pattern would continue into their teenage years, with Eren leaping into action to save Armin from danger, not caring if he himself is harmed in the process."},
+                      {"id": 2, "details": "Despite Armin considering himself as burdensome, Eren greatly appreciates his quick-wittiness and brilliant judgment (it also did not miss him that Armin's quick thinking had saved his and Mikasa's lives in 845). Eren's confidence in Armin is so great that he would entrust him with his life with no hesitation if asked to do so."}
                     ]},
                     {"id": 4, "character": "Levi", "content": [
-                      {"id": 1, "img": "", "details": "this is some data for Levi"}
+                      {"id": 1, "img": "https://bit.ly/3cn7E32", "details": "As humanity's most formidable soldier and Eren's superior officer, Levi commands great respect and admiration from him. Eren bore no grudge against Levi for brutally beating him before the entire court during his trial, recognizing that it had been a necessary measure to secure his life."},
+                      {"id": 2, "details": "Aware of the vast gap in experience between them, Eren strives to learn as much as he can from Levi, heeding his advice with little hesitation and trusting his judgment. During the thirty days he shared living space with Levi's squad, he also seems to have learned the standard of cleanliness Levi demands very well."}
                     ]},
                     {"id": 5, "character": "Jean", "content": [
-                      {"id": 1, "img": "", "details": "this is some data for Jean"}
+                      {"id": 1, "img": "https://bit.ly/3wSaEOs", "details": "As Eren's main rival, his temperament is the very antithesis of Eren's. Where Eren is hotheaded, Jean is collected; and Jean is pessimistically pragmatic as Eren is idealistic. Jean believed anyone who wished to join the Scout Regiment was a suicidal fool, while Eren regarded those who looked down on the people who wanted to fight the Titans with contempt."},
+                      {"id": 2, "details": "Initially, they were able to resolve their differences in a civil manner despite starting off on the wrong foot. However, this was short-lived, as Jean became jealous when he saw how familiar Eren was with Mikasa. A fierce rivalry soon budded between them, with the two constantly provoking each other and getting into fistfights."},
+                      {"id": 3, "details": "In the wake of the Battle of Trost however, Eren and Jean seem to have set their differences aside and stopped antagonizing each other. Though they still quarrel as much as before, their animosity has noticeably lessened."}
                     ]},
                     {"id": 6, "character": "Annie", "content": [
                       {"id": 1, "img": "", "details": "this is some data for Annie"}
@@ -110,7 +114,16 @@
                       {"id": 2, "content": "Feigning distress and saying that he was lost, Eren got the bandits to drop their guard, slitting ones’ throat, and stabbing another, though caught off guard by a third, who proceeded to strangle him. Mikasa picked up the knife and stabbed the bandit through the heart, killing him instantly."}
                     ]}
                   ],
-                  "skills": [],
+                  "skills": [
+                    {"id": 1, "title": "Omni-Directional Maneuvering Gear", "details": [
+                      {"id": 1, "content": "The omni-directional mobility gear is a type of equipment developed by humans that allows great mobility when facing the Titans in combat. It allows the user to fight in a 3D space instead of a 2D one. The equipment itself takes the form of a body harness that encompasses much of the body below the neck."},
+                      {"id": 2, "content": "Eren’s use of the ODM Gear started rocky. Unknowingly equipped with a broken harness, Eren was sure to be kicked out of the 104th due to not being able to master the ODM. Eventually, Eren almost learned to use the broken harness, and when given working ODM Gear, he excelled, proving to be 5th in the corps using this skill."}
+                    ]},
+                    {"id": 2, "title": "Attack Titan", "details": [
+                      {"id": 1, "content": "The Attack Titan is one of the Nine Titans, and has fought for freedom throughout the generations. The power allows a human to transform into a Titan, retaining knowledge and gaining increased skill, speed, power, etc. It is currently in the possession of Eren Jaeger."},
+                      {"id": 2, "content": "Eren uses this power on multiple occasions to save humanity from the threat of the Titans. He seals the gate in Trost, constantly protects the Scout Regiment, defeats the Armored, Jaw, and Warhammer Titans, and destroys countless Titans, enemy forces, and more, all through the desire to escape the walls and end the Titans."}
+                    ]}
+                  ],
                   "more": []
                 }
               },
@@ -149,12 +162,12 @@
             "card_bck": "https://bit.ly/2ZV6XeP",
             "card_img": "https://bit.ly/3BRhkxj",
             "first_name": "Kirigaya",
-            "firstName_FR": 0.31,
+            "firstName_FR": 0.60,
             "last_name": "Kazuto",
-            "lastName_FR": 0.7,
+            "lastName_FR": 0.75,
             "full_name": "Kirigaya Kazuto",
             "alias": "Kirito",
-            "aliasRatio": 0.31,
+            "aliasRatio": 0.4,
             "bio": "Arcu urna cras auctor neque, dolor gravida nunc. Sed tellus tincidunt id pulvinar morbi tristique est nisl placerat. Est orci tortor amet nunc dictum. Neque non rhoncus leo, eu. Bibendum in lacinia egestas convallis at neque. Enim velit sed commodo lacus et. Nisi, eget nisl vel, a sapien, sit dolor lacus, feugiat. Nunc gravida.",
             "imgs": {
               "hero_img": "https://bit.ly/3w8AFZz",
@@ -167,7 +180,9 @@
               {"id": 3, "title": "guild", "value": "Solo Player"} 
             ],
             "details": {
-              "timeline": [],
+              "timeline": [
+                {"id": 1, "year": 2021, "events": []}
+              ],
               "relationships": [],
               "key moments": [],
               "skills": [],
